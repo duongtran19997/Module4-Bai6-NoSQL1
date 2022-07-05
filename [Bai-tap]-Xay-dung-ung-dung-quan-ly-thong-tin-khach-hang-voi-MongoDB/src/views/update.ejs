@@ -1,0 +1,72 @@
+
+<div class="page-heading">
+
+    <h1>Update a Customer</h1>
+
+</div>
+
+<form action="/customers/update" method="POST" enctype="multipart/form-data">
+
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+
+            <input type="text" class="form-control" id="name" name="name" value="<%= user._id%>" hidden="true">
+
+        </div>
+
+    </div>
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+            <label>Name</label>
+
+            <input type="text" class="form-control" id="name" name="name" value="<%= user.name%>">
+
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+            <label>code</label>
+
+            <input type="number" class="form-control" id="price" name="code" value="<%= user.code%>">
+
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+            <label>Email</label>
+
+            <input type="email" class="form-control" id="producer" name="email" value="<%= user.email%>">
+
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+            <label>Phone Number</label>
+
+            <input type="text" class="form-control" id="avatar" name="phoneNumber" value="<%= user.email%>">
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <button type="submit" class="btn btn-primary" >Create</button></div>
+
+</form>

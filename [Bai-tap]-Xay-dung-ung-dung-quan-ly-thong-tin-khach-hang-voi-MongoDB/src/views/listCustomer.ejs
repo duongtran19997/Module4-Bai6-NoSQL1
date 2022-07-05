@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <title>Customers</title>
+
+</head>
+
+
+
+<body>
+
+<h2>List Products</h2>
+
+<% for(const user of users) { %>
+
+    <h3>
+
+        Name: <%= user.name %>
+
+    </h3>
+
+    <p>
+
+        Price: <%= user.code %>
+
+    </p>
+
+    <p>
+
+        Producer: <%= user.email %>
+
+    </p>
+
+    <p>
+
+        Avatar: <%= user.phoneNumber %>
+
+    </p>
+
+        <a href="/customers/delete?id=<%= user._id %>">Delete</a>
+        <a href="/customers/update?id=<%= user._id %>">Update</a>
+
+    </br>
+
+<% } %>
+
+</body>
+
+
+
+</html>
