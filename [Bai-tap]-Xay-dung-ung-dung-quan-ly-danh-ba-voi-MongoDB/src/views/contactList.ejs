@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <title>Contact</title>
+
+</head>
+
+
+
+<body>
+<a href="/customers/create">Create</a>
+
+<h2>List Products</h2>
+
+<% for(const user of users) { %>
+
+    <h3>
+
+        Name: <%= user.name %>
+
+    </h3>
+
+    <p>
+
+        Price: <%= user.phoneNumber %>
+
+    </p>
+
+    <a href="/contact/delete?id=<%= user._id %>">Delete</a>
+    <a href="/contact/update?id=<%= user._id %>">Update</a>
+
+    </br>
+
+<% } %>
+
+</body>
+
+</html>
